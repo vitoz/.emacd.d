@@ -6,10 +6,10 @@
 
 (setq org-directory "~/org/")
 (setq org-capture-templates '(
-("n" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")"* Todo %? %T\n")
-("s" "Schdule" entry (file+headline "~/org/gtd.org" "Tasks")"* Schdule %?\n  %i\n  %a")
-("S" "Someday" entry (file+headline "~/org/gtd.org" "Tasks")"* Someday %?\n  %i\n  %a")
-("m" "Memo" entry (file+headline "~/org/gtd.org" "Tasks")"* Memo %?\n  %i\n  %a")))
+("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")"* Todo %? %T\n")
+("s" "Schdule" entry (file+headline "~/org/gtd.org" "Tasks")"* Schdule %? %T\n")
+("S" "Someday" entry (file+headline "~/org/gtd.org" "Tasks")"* Someday %? %T\n")
+("m" "Memo" entry (file+headline "~/org/gtd.org" "Tasks")"* Memo %? %T\n")))
 
 ;;设置TODO关键字
 (setq org-todo-keywords
